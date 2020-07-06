@@ -1,0 +1,63 @@
+:root {
+  --base-skin-color: #fcbf80;
+  --dev-opacity: 0.5; /*This is the opacity given while development for an easy see through*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.painting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(39.87deg);
+  opacity: 0;
+}
+
+.lady {
+  position: relative;
+}
+
+.face {
+  width: 198px;
+  height: 275px;
+  background-color: var(--base-skin-color);
+  z-index: 1;
+  position: relative;
+  top: 265px;
+  left: 376px;
+  opacity: var(--dev-opacity);
+  clip-path: polygon(
+    0% 25%,
+    5% 5%,
+    20% 0%,
+    50% 0%,
+    80% 20%,
+    89% 30%,
+    100% 50%,
+    100% 86%,
+    70% 95%,
+    30% 100%,
+    22% 98%,
+    17% 95%,
+    13% 90%,
+    9% 80%,
+    3% 70%,
+    0% 60%,
+    2% 45%
+  );
+}
+
+.ear {
+  width: 55px;
+  height: 100px;
+  background-color: var(--base-skin-color);
+  opacity: var(--dev-opacity);
+  position: relative;
+  top: 90px;
+  left: 573px;
+  border-radius: 95% 20% 100% 0/ 60% 15% 100% 0;
+}
